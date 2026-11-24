@@ -1,0 +1,21 @@
+name: Daily Sarkari Alert Update
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check job data file
+        run: |
+          test -f jobs.json
+          echo "Sarkari Alert data file found"
