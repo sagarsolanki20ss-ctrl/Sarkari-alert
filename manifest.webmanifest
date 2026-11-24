@@ -1,0 +1,8 @@
+{
+  "name": "Sarkari Alert",
+  "short_name": "Sarkari Alert",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f5fa",
+  "theme_color": "#123b70"
+}
